@@ -1,0 +1,36 @@
+{
+  "name": "jaris",
+  "version": "3.4.2",
+  "description": "JARVIS APP",
+  "main": "./out/main/main.js",
+  "author": "jarvis7.net",
+  "homepage": "http://jarvis7.net",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@electron-toolkit/preload": "^3.0.1",
+    "@electron-toolkit/utils": "^3.0.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "bluebird": "^3.7.2",
+    "cheerio": "1.0.0-rc.10",
+    "dayjs": "^1.11.13",
+    "delay": "^6.0.0",
+    "electron-log": "^4.4.8",
+    "electron-updater": "^6.1.4",
+    "jsonpath-plus": "^7.2.0",
+    "node-fetch": "2",
+    "pinia": "^2.2.2",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "primeflex": "^3.3.1",
+    "primeicons": "^7.0.0",
+    "primevue": "3.53.0",
+    "promise-workers": "^2.0.2",
+    "set-interval-async": "^3.0.3",
+    "socket.io-client": "^4.7.2",
+    "vue-router": "^4.4.3"
+  }
+}

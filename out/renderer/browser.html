@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>자비스</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style lang="scss">html {
+  font-size: 12px;
+  height: 100%;
+}
+
+body {
+  background-color: var(--surface-ground);
+  color: var(--text-color);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#app {
+  font-family: var(--font-family);
+  height: 100%;
+  background-color: var(--surface-ground);
+  color: var(--text-color);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+#app ::-webkit-scrollbar {
+  display: block;
+  width: 1px;
+}
+
+#app ::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color) !important;
+  border-radius: 1px;
+}
+
+.p-sidebar-right {
+  top: 30px !important;
+  right: 0;
+  width: 100% !important;
+  height: 100%;
+}
+
+.btn-sidebar {
+  position: absolute !important;
+  top: 32px;
+  right: 3px;
+}
+
+.btn-chat {
+  position: absolute !important;
+  top: 32px;
+  right: 107px;
+}
+
+.p-sidebar-header-content {
+  width: 100%;
+}
+
+.p-message {
+  margin: 0 !important;
+}
+
+.p-panel .p-panel-header {
+  display: block;
+  padding: 0.5rem !important;
+}
+
+.p-tabview-panels {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.p-inputgroup-addon {
+  padding: 0.15rem 0.15rem !important;
+}
+
+.p-checkbox {
+  margin: 3px;
+}
+
+.p-message .p-message-wrapper {
+  padding: 0.62rem 1rem !important;
+}
+
+tr.p-selectable-row.p-highlight {
+  background: rgba(129, 199, 132, 0.16) !important;
+  color: rgba(255, 255, 255, 0.87) !important;
+  outline: 0.15rem solid #a7d8a9;
+  outline-offset: -0.15rem;
+}
+
+.p-dropdown-items-wrapper {
+  max-width: 415px;
+  max-height: 330px !important;
+}
+
+.p-button-xs {
+  font-size: 0.875rem !important;
+  padding: 0.15rem 0.8rem !important;
+}
+
+.p-button-2xs {
+  font-size: 0.875rem !important;
+  height: 17.3px;
+  padding: 0rem 0.5rem;
+}
+
+.p-datatable th[class*=text-] .p-column-header-content {
+  display: block;
+  width: 100% !important;
+}
+
+.p-datatable th[class*=text-] .p-column-header-content > span.p-column-title {
+  display: block;
+  width: 100% !important;
+}
+
+.talign-center {
+  text-align: center !important;
+  line-height: 20px !important;
+}
+
+.colBase, .colGray, .colSurfaceBorder, .colSurfaceGround, .colSurfaceCard, .colLightGreen, .colGreen {
+  flex: 0 0 auto;
+  padding: 0.25rem;
+  text-align: center;
+  border-color: var(--surface-border);
+}
+
+.colGreen {
+  background-color: #27754a;
+}
+
+.colLightGreen {
+  background-color: #359e64;
+  color: yellow;
+}
+
+.colSurfaceCard {
+  background-color: var(--surface-card) !important;
+}
+
+.colSurfaceGround {
+  background-color: #3e526d !important;
+}
+
+.colSurfaceBorder {
+  background-color: var(--surface-border) !important;
+}
+
+.colGray {
+  background-color: var(--gray-200);
+  color: var(--bluegray-800) !important;
+}
+
+.width3 {
+  width: 3% !important;
+}
+
+.width5 {
+  width: 5% !important;
+}
+
+.width7 {
+  width: 7% !important;
+}
+
+.width8 {
+  width: 8% !important;
+}
+
+.width10 {
+  width: 10% !important;
+}
+
+.width13 {
+  width: 13% !important;
+}
+
+.width16 {
+  width: 16% !important;
+}
+
+.width20 {
+  width: 20% !important;
+}
+
+.width24 {
+  width: 24% !important;
+}
+
+.width25 {
+  width: 25% !important;
+}
+
+.width28 {
+  width: 28% !important;
+}
+
+.width33 {
+  width: 33.333% !important;
+}
+
+.width49 {
+  width: 49% !important;
+}
+
+.width50 {
+  width: 50% !important;
+}
+
+.width56 {
+  width: 56% !important;
+}
+
+.width84 {
+  width: 84% !important;
+}
+
+.threeFolderMatches div.p-datatable-wrapper > table.p-datatable-table > thead.p-datatable-thead {
+  display: none !important;
+}
+
+.checkbox-button-only.p-button {
+  padding: 0rem 0rem !important;
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+}
+
+.checkbox-button-only.p-button.p-button-icon-only {
+  padding: 0rem 0rem !important;
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+}
+
+.displayNone {
+  display: none !important;
+}
+
+.p-button:focus {
+  outline: 0 none !important;
+  outline-offset: 0 !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.drag-enable {
+        -webkit-app-region: drag;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/browser-40b6521f.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/primevue-2aef5b60.js">
+    <link rel="modulepreload" crossorigin href="./assets/_commonjsHelpers-23102255.js">
+    <link rel="stylesheet" href="./assets/primevue-616d0caa.css">
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="grid grid-nogutter" style="background-color: #212529">
+        <div class="col-fixed drag-enable" style="width: 25px; height: 30px">
+          <img
+            src="./assets/icon_browser-9090fbf0.png"
+            style="width: 15px; margin-top: 7px; margin-left: 5px"
+          />
+        </div>
+        <div
+          class="col-fixed drag-enable"
+          style="width: 300px; height: 30px; font-size: 15px; line-height: 28px"
+        >
+          {{site.name}}
+        </div>
+        <div class="col text-right drag-enable"></div>
+        <div class="col-fixed text-right mr-4" style="width: 150px">
+          <p-button
+            icon="pi pi-minus"
+            class="p-button-rounded p-button-text"
+            style="color: white"
+            @click="onBrowserMinimize"
+          ></p-button>
+          <p-button
+            icon="pi pi-stop"
+            class="p-button-rounded p-button-text p-mr-2"
+            style="color: white"
+            @click="onBrowserMaximize"
+          ></p-button>
+          <p-button
+            icon="pi pi-home"
+            class="p-button-rounded p-button-text p-mr-2"
+            severity="info"
+            @click="onBrowserHome"
+          ></p-button>
+          <p-button
+            icon="pi pi-refresh"
+            class="p-button-rounded p-button-text p-mr-2"
+            severity="danger"
+            @click="onBrowserReset"
+          ></p-button>
+        </div>
+      </div>
+
+      <div class="grid grid-nogutter p-fluid" v-if="site && site.domain">
+        <div class="col-12 md:col-3 pr-2">
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+              <i class="pi pi-bookmark"></i>
+            </span>
+            <input-text readonly :value="site.domain"></input-text>
+          </div>
+        </div>
+        <div class="col-12 md:col-2 pr-2">
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+              <i class="pi pi-send"></i>
+            </span>
+            <input-text readonly :value="site.capcha ? '수동로그인' : '자동로그인'"></input-text>
+          </div>
+        </div>
+        <div class="col-12 md:col-2 pr-2">
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+              <i class="pi pi-user"></i>
+            </span>
+            <input-text
+              readonly
+              :value="site.username"
+              v-tooltip.focus="'복사완료'"
+              @click="onClipboard(site.username)"
+            ></input-text>
+            <span
+              class="p-inputgroup-addon"
+              style="cursor: pointer"
+              @click="onClipboard(site.username)"
+            >
+              <i class="pi pi-copy"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="col-12 md:col-2 pr-2">
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+              <i class="pi pi-lock"></i>
+            </span>
+            <input-text
+              readonly
+              :value="site.password"
+              v-tooltip.focus="'복사완료'"
+              @click="onClipboard(site.password)"
+            ></input-text>
+            <span
+              class="p-inputgroup-addon"
+              style="cursor: pointer"
+              @click="onClipboard(site.username)"
+            >
+              <i class="pi pi-copy"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="col-12 md:col-3 pr-2">
+          <div class="p-inputgroup">
+            <input-text
+              ref="findInput"
+              v-model="keyword"
+              placeholder="검색(단축키:Ctl+F)"
+              @keydown.enter="onPressEnter"
+            ></input-text>
+            <p-button
+              icon="pi pi-search"
+              class="p-button-info mr-3"
+              @click="onPressEnter"
+            ></p-button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

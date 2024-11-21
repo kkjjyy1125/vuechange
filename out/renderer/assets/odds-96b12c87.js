@@ -1,0 +1,1 @@
+import{y as o,z as s,r as c}from"./primevue-2aef5b60.js";const a=o({setup(){const e=c([]),p=(t,i)=>t.filter(n=>n.type==i),r=location.href.split("match_id=")[1];return window.api.fetch.get(`/api/match/${r}/div`).then(t=>{e.value=t}),{info:e,typeGames:p}}});a.use(s);a.mount("#app");

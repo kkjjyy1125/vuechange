@@ -1,0 +1,1 @@
+import{j as t,f as d,C as a,G as r,p as n}from"./primevue-2aef5b60.js";const p={class:"mr-1"},_=t({__name:"COdds",props:{odds:{type:Number,required:!1}},setup(e){const s=e,o=d(()=>!s.odds||isNaN(s.odds)?"":s.odds.toFixed(4));return(c,i)=>(n(),a("span",p,r(o.value),1))}});export{_};

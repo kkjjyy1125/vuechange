@@ -1,0 +1,1 @@
+import{j as r,C as o,G as i,X as n,p}from"./primevue-2aef5b60.js";const l=r({__name:"CTextClip",props:{text:{type:String,required:!0},width:{type:String,required:!0}},setup(t){const e=t;return(s,a)=>(p(),o("div",{class:"white-space-nowrap overflow-hidden text-overflow-clip",style:n({width:e.width})},i(e.text),5))}});export{l as _};
